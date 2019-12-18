@@ -6,6 +6,8 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - run: 'echo "Context value is $tanyatest"' # run the `echo` command
+      - run: 'echo "Context value base64 is '
+      - run: 'echo $tanyatest | base64' # run the `echo` command
 
 workflows:
   version: 2
